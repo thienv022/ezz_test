@@ -244,7 +244,8 @@
                   },
                   "icon": "material:font_download"
                 }
-              ]
+              ],
+              "active": true
             },
             {
               "type": "tabset",
@@ -267,8 +268,7 @@
                   "enableClose": false,
                   "icon": "svg:components"
                 }
-              ],
-              "active": true
+              ]
             }
           ]
         }
@@ -1145,7 +1145,7 @@
       "transform": {
         "translate": {
           "x": -14.5,
-          "y": -8
+          "y": -208
         },
         "scale": 0.75
       },
