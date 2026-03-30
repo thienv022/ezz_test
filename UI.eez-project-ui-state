@@ -1,10 +1,9 @@
 {
   "navigation": {
-    "selectedUserPageObject": "[UI.eez-project]:/userPages/1",
-    "selectedActionObject": "[UI.eez-project]:/actions/0",
+    "selectedUserPageObject": "[UI.eez-project]:/userPages/0",
     "selectedStyleObject": "[UI.eez-project]:/lvglStyles/styles/0",
     "selectedFontObject": "[UI.eez-project]:/fonts/0",
-    "selectedBitmapObject": "[UI.eez-project]:/bitmaps/0",
+    "selectedBitmapObject": "[UI.eez-project]:/bitmaps/66",
     "subnavigationSelectedItems": {}
   },
   "layoutModel": {
@@ -25,8 +24,8 @@
           },
           {
             "type": "border",
-            "selected": 0,
-            "size": 217.5,
+            "selected": 2,
+            "size": 197.5,
             "location": "right",
             "children": [
               {
@@ -126,7 +125,7 @@
                 {
                   "type": "tabset",
                   "id": "#fad75cfd-a924-4c43-981c-40c3cc788249",
-                  "weight": 1.103448275862069,
+                  "weight": 1.4425287356321839,
                   "enableClose": false,
                   "children": [
                     {
@@ -158,7 +157,7 @@
                 {
                   "type": "tabset",
                   "id": "#a86f3e89-6d88-40ac-a040-3a7b46bd51cc",
-                  "weight": 1.4942528735632183,
+                  "weight": 1.1551724137931032,
                   "enableClose": false,
                   "children": [
                     {
@@ -192,32 +191,43 @@
             {
               "type": "tabset",
               "id": "EDITORS",
-              "weight": 47.21208557503867,
+              "weight": 79.7721445923067,
+              "selected": 3,
               "enableDeleteWhenEmpty": false,
               "enableClose": false,
               "children": [
                 {
                   "type": "tab",
-                  "id": "#564b4762-475d-42b2-9c77-766ec88419e7",
-                  "name": "mode",
+                  "id": "#7f4a6e5c-796d-4a68-9e67-8ceb3b4ae9e3",
+                  "name": "mode1_4",
                   "component": "editor",
                   "config": {
-                    "objectPath": "[UI.eez-project]:/userPages/1",
+                    "objectPath": "[UI.eez-project]:/userPages/13",
                     "permanent": false
                   },
                   "icon": "svg:page"
                 },
                 {
                   "type": "tab",
-                  "id": "#454400b1-d2b5-44ed-b0e4-1395d015d234",
-                  "name": "Settings",
+                  "id": "#e67159a7-4538-42ae-9a2b-b9936135cee4",
+                  "name": "mode_sewing_data1",
                   "component": "editor",
                   "config": {
-                    "objectPath": "[UI.eez-project]:/settings",
-                    "subObjectPath": "[UI.eez-project]:/settings",
-                    "permanent": false
+                    "objectPath": "[UI.eez-project]:/userPages/19",
+                    "permanent": true
                   },
-                  "icon": "material:settings"
+                  "icon": "svg:page"
+                },
+                {
+                  "type": "tab",
+                  "id": "#018bfaa2-d0a1-4270-b3a6-58ab09fffd84",
+                  "name": "mode_sewing_data",
+                  "component": "editor",
+                  "config": {
+                    "objectPath": "[UI.eez-project]:/userPages/18",
+                    "permanent": true
+                  },
+                  "icon": "svg:page"
                 },
                 {
                   "type": "tab",
@@ -250,7 +260,7 @@
             {
               "type": "tabset",
               "id": "#478c54f3-6fee-4834-a827-2edc5d579980",
-              "weight": 32.560059017268046,
+              "weight": 0,
               "children": [
                 {
                   "type": "tab",
@@ -267,6 +277,14 @@
                   "component": "componentsPalette",
                   "enableClose": false,
                   "icon": "svg:components"
+                },
+                {
+                  "type": "tab",
+                  "id": "BREAKPOINTS_PALETTE",
+                  "name": "Breakpoints",
+                  "component": "breakpointsPanel",
+                  "enableClose": false,
+                  "icon": "svg:breakpoints_panel"
                 }
               ]
             }
@@ -1144,8 +1162,8 @@
       "selection": {},
       "transform": {
         "translate": {
-          "x": -14.5,
-          "y": -208
+          "x": -325.42246155585707,
+          "y": -222.02355269109
         },
         "scale": 0.75
       },
@@ -1165,8 +1183,7 @@
           "7": {},
           "10": {},
           "11": {},
-          "21": {},
-          "22": {
+          "21": {
             "$selected": true
           }
         }
