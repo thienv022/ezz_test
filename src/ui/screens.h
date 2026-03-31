@@ -33,7 +33,9 @@ enum ScreensEnum {
     SCREEN_ID_MODE_SEWING_DATA = 20,
     SCREEN_ID_MODE_SEWING_DATA1 = 21,
     SCREEN_ID_MODE_SEWING_DATA2 = 22,
-    _SCREEN_ID_LAST = 22
+    SCREEN_ID_PRESSER_TYPE_SELECTION = 23,
+    SCREEN_ID_PATTERN_NO_SELECTTION = 24,
+    _SCREEN_ID_LAST = 24
 };
 
 typedef struct _objects_t {
@@ -59,6 +61,8 @@ typedef struct _objects_t {
     lv_obj_t *mode_sewing_data;
     lv_obj_t *mode_sewing_data1;
     lv_obj_t *mode_sewing_data2;
+    lv_obj_t *presser_type_selection;
+    lv_obj_t *pattern_no_selecttion;
     lv_obj_t *obj0;
     lv_obj_t *obj1;
     lv_obj_t *obj2;
@@ -69,6 +73,8 @@ typedef struct _objects_t {
     lv_obj_t *btn_sewing_data;
     lv_obj_t *p1_btn_mode_screen;
     lv_obj_t *btn_communication_screen;
+    lv_obj_t *presser_type;
+    lv_obj_t *btn_pattern_no_selecttion;
     lv_obj_t *obj5;
     lv_obj_t *obj6;
     lv_obj_t *btn_mode2;
@@ -461,6 +467,33 @@ typedef struct _objects_t {
     lv_obj_t *s069;
     lv_obj_t *s070;
     lv_obj_t *s083;
+    lv_obj_t *obj48;
+    lv_obj_t *obj49;
+    lv_obj_t *btn_ready_screen20_1;
+    lv_obj_t *btn_info_screen20_1;
+    lv_obj_t *btn_communication_screen20_1;
+    lv_obj_t *btn_mode_screen20_1;
+    lv_obj_t *btn_exit16_1;
+    lv_obj_t *presser_type_1;
+    lv_obj_t *presser_type_2;
+    lv_obj_t *presser_type_5;
+    lv_obj_t *presser_type_3;
+    lv_obj_t *obj50;
+    lv_obj_t *obj51;
+    lv_obj_t *obj52;
+    lv_obj_t *btn_ready_screen20_3;
+    lv_obj_t *btn_info_screen20_3;
+    lv_obj_t *btn_communication_screen20_3;
+    lv_obj_t *btn_mode_screen20_3;
+    lv_obj_t *btn_exit16_3;
+    lv_obj_t *obj53;
+    lv_obj_t *obj54;
+    lv_obj_t *obj55;
+    lv_obj_t *obj56;
+    lv_obj_t *obj57;
+    lv_obj_t *obj58;
+    lv_obj_t *obj59;
+    lv_obj_t *pattern_no;
 } objects_t;
 
 extern objects_t objects;
@@ -530,6 +563,12 @@ void tick_screen_mode_sewing_data1();
 
 void create_screen_mode_sewing_data2();
 void tick_screen_mode_sewing_data2();
+
+void create_screen_presser_type_selection();
+void tick_screen_presser_type_selection();
+
+void create_screen_pattern_no_selecttion();
+void tick_screen_pattern_no_selecttion();
 
 void tick_screen_by_id(enum ScreensEnum screenId);
 void tick_screen(int screen_index);

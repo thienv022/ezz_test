@@ -1,6 +1,6 @@
 #include "images.h"
 
-const ext_img_desc_t images[151] = {
+const ext_img_desc_t images[172] = {
     { "ma_a", &img_ma_a },
     { "ma_b", &img_ma_b },
     { "ma_c", &img_ma_c },
@@ -152,4 +152,25 @@ const ext_img_desc_t images[151] = {
     { "maintenance and inspection", &img_maintenance_and_inspection },
     { "production control", &img_production_control },
     { "working measurement", &img_working_measurement },
+    { "type1", &img_type1 },
+    { "type2", &img_type2 },
+    { "type3", &img_type3 },
+    { "type5", &img_type5 },
+    { "enter", &img_enter },
+    { "pattern_no_1", &img_pattern_no_1 },
+    { "pattern_no_2", &img_pattern_no_2 },
+    { "pattern_no_3", &img_pattern_no_3 },
+    { "pattern_no_4", &img_pattern_no_4 },
+    { "pattern_no_5", &img_pattern_no_5 },
+    { "pattern_no_6", &img_pattern_no_6 },
+    { "pattern_no_1_1", &img_pattern_no_1_1 },
+    { "pattern_no_2_2", &img_pattern_no_2_2 },
+    { "pattern_no_3_3", &img_pattern_no_3_3 },
+    { "pattern_no_4_4", &img_pattern_no_4_4 },
+    { "pattern_no_5_5", &img_pattern_no_5_5 },
+    { "pattern_no_6_6", &img_pattern_no_6_6 },
+    { "type2_2", &img_type2_2 },
+    { "type1_1", &img_type1_1 },
+    { "type3_3", &img_type3_3 },
+    { "type5_5", &img_type5_5 },
 };

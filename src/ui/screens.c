@@ -12,8 +12,8 @@
 
 objects_t objects;
 
-static const char *screen_names[] = { "Main", "mode", "ready", "info", "sewing_data1", "sewing_data2", "sewing_data3", "sewing_data4", "sewing_data5", "sewing_data6", "mode1_1", "mode1_2", "mode1_3", "mode1_4", "mode2_1", "mode2_2", "mode2_3", "mode2_4", "check_program", "mode_sewing_data", "mode_sewing_data1", "mode_sewing_data2" };
-static const char *object_names[] = { "main", "mode", "ready", "info", "sewing_data1", "sewing_data2", "sewing_data3", "sewing_data4", "sewing_data5", "sewing_data6", "mode1_1", "mode1_2", "mode1_3", "mode1_4", "mode2_1", "mode2_2", "mode2_3", "mode2_4", "check_program", "mode_sewing_data", "mode_sewing_data1", "mode_sewing_data2", "obj0", "obj1", "obj2", "obj3", "obj4", "btn_ready_screen", "btn_info_screen", "btn_sewing_data", "p1_btn_mode_screen", "btn_communication_screen", "obj5", "obj6", "btn_mode2", "btn_check_program", "btn_change_sewing_mode", "btn_register_sewing_data_custom", "btn_sewing_data_in_mode", "btn_mode1", "btn_ready_screen1", "btn_info_screen1", "btn_communication_screen1", "btn_mode_screen1", "btn_performing_format", "btn_register_the_pattern", "mode1", "mode2", "mode3", "mode5", "mode7", "mode8", "mode4", "mode9", "obj7", "obj8", "obj9", "btn_ready_screen2", "btn_info_screen2", "btn_communication_screen2", "btn_mode_screen2", "obj10", "obj11", "btn_production_control", "btn_working_measurement", "btn_maintenance_and_inspection", "btn_ready_screen1_1", "btn_info_screen1_1", "btn_communication_screen1_1", "btn_mode_screen1_1", "i1", "i2", "i3", "obj12", "obj13", "btn_s004", "btn_s002", "btn_s005", "btn_s003", "btn_s006", "btn_s001", "btn_ready_screen3", "btn_info_screen3", "btn_communication_screen3", "btn_mode_screen3", "btn_next", "btn_back", "btn_exit", "s001", "s002", "s003", "s004", "s005", "s006", "obj14", "obj15", "btn_s010", "btn_s008", "btn_s011", "btn_s009", "btn_s021", "btn_s007", "btn_ready_screen4", "btn_info_screen4", "btn_communication_screen4", "btn_mode_screen4", "btn_next1", "btn_back1", "btn_exit1", "s007", "s008", "s009", "s0010", "s0011", "s021", "obj16", "obj17", "btn_ready_screen5", "btn_info_screen5", "btn_communication_screen5", "btn_mode_screen5", "btn_next2", "btn_back2", "btn_exit2", "s022", "s023", "s031", "s034", "s035", "s036", "obj18", "obj19", "btn_s044", "btn_s038", "btn_s051", "btn_s040", "btn_s055", "btn_s037", "btn_ready_screen6", "btn_info_screen6", "btn_communication_screen6", "btn_mode_screen6", "btn_next3", "btn_back3", "btn_exit3", "s037", "s038", "s040", "s044", "s051", "s055", "obj20", "obj21", "btn_s064", "btn_s058", "btn_s067", "btn_s062", "btn_s068", "btn_s057", "btn_ready_screen7", "btn_info_screen7", "btn_communication_screen7", "btn_mode_screen7", "btn_next4", "btn_back4", "btn_exit4", "s057", "s058", "s062", "s064", "s067", "s068", "obj22", "obj23", "btn_s084", "btn_s081", "btn_ready_screen8", "btn_info_screen8", "btn_communication_screen8", "btn_mode_screen8", "btn_next5", "btn_back5", "btn_exit5", "s081", "s084", "obj24", "obj25", "btn_u004", "btn_u002", "btn_u005", "btn_u003", "btn_u006", "btn_u001", "btn_ready_screen9", "btn_info_screen9", "btn_communication_screen9", "btn_mode_screen9", "btn_next6", "btn_back6", "btn_exit6", "u001", "u002", "u003", "u004", "u005", "u006", "obj26", "obj27", "btn_u010", "btn_u008", "btn_u011", "btn_u009", "btn_u012", "btn_u007", "btn_ready_screen10", "btn_info_screen10", "btn_communication_screen10", "btn_mode_screen10", "btn_next7", "btn_back7", "btn_exit7", "u007", "u008", "u009", "u010", "u011", "u012", "obj28", "obj29", "btn_u018", "btn_u014", "btn_u019", "btn_u015", "btn_u020", "btn_u013", "btn_ready_screen11", "btn_info_screen11", "btn_communication_screen11", "btn_mode_screen11", "btn_next8", "btn_back8", "btn_exit8", "u013", "u014", "u015", "u018", "u019", "u020", "obj30", "obj31", "btn_u024", "btn_u022", "btn_u025", "btn_u023", "btn_u500", "btn_u021", "btn_ready_screen12", "btn_info_screen12", "btn_communication_screen12", "btn_mode_screen12", "u021", "u022", "u023", "u024", "u025", "u500", "obj32", "obj33", "btn_k005", "btn_k003", "btn_k006", "btn_k004", "btn_k007", "btn_k001", "btn_ready_screen13", "btn_info_screen13", "btn_communication_screen13", "btn_mode_screen13", "btn_next9", "btn_back9", "btn_exit9", "k001", "k003", "k004", "k005", "k006", "k007", "obj34", "obj35", "btn_k011", "btn_k009", "btn_k012", "btn_k010", "btn_k013", "btn_k008", "btn_ready_screen14", "btn_info_screen14", "btn_communication_screen14", "btn_mode_screen14", "btn_next10", "btn_back10", "btn_exit10", "k008", "k009", "k010", "k011", "k012", "k013", "obj36", "obj37", "btn_k017", "btn_k015", "btn_k018", "btn_k016", "btn_k019", "btn_k014", "btn_ready_screen15", "btn_info_screen15", "btn_communication_screen15", "btn_mode_screen15", "btn_next11", "btn_back11", "btn_exit11", "k014", "k015", "k016", "k017", "k018", "k019", "obj38", "obj39", "btn_k021", "btn_k022", "btn_k020", "btn_ready_screen16", "btn_info_screen16", "btn_communication_screen16", "btn_mode_screen16", "btn_next12", "btn_back12", "btn_exit12", "k020", "k021", "k022", "obj40", "obj41", "btn_i004", "btn_i002", "btn_i005", "btn_i003", "btn_i001", "btn_ready_screen17", "btn_info_screen17", "btn_communication_screen17", "btn_mode_screen17", "btn_next13", "btn_back13", "btn_exit13", "i001", "i002", "i003", "i004", "i005", "obj42", "obj43", "btn_s042", "btn_s039", "btn_s052", "btn_s041", "btn_s053", "btn_s020", "btn_ready_screen18", "btn_info_screen18", "btn_communication_screen18", "btn_mode_screen18", "btn_next14", "btn_back14", "btn_exit14", "s020", "s039", "s041", "s042", "s052", "s053", "obj44", "obj45", "btn_s060", "btn_s056", "btn_s061", "btn_s059", "btn_s063", "btn_s054", "btn_ready_screen19", "btn_info_screen19", "btn_communication_screen19", "btn_mode_screen19", "btn_next15", "btn_back15", "btn_exit15", "s054", "s056", "s059", "s060", "s061", "s063", "obj46", "obj47", "btn_s070", "btn_s066", "btn_s083", "btn_s069", "btn_s065", "btn_ready_screen20", "btn_info_screen20", "btn_communication_screen20", "btn_mode_screen20", "btn_next16", "btn_back16", "btn_exit16", "s065", "s066", "s069", "s070", "s083" };
+static const char *screen_names[] = { "Main", "mode", "ready", "info", "sewing_data1", "sewing_data2", "sewing_data3", "sewing_data4", "sewing_data5", "sewing_data6", "mode1_1", "mode1_2", "mode1_3", "mode1_4", "mode2_1", "mode2_2", "mode2_3", "mode2_4", "check_program", "mode_sewing_data", "mode_sewing_data1", "mode_sewing_data2", "presser type selection", "pattern_no_selecttion" };
+static const char *object_names[] = { "main", "mode", "ready", "info", "sewing_data1", "sewing_data2", "sewing_data3", "sewing_data4", "sewing_data5", "sewing_data6", "mode1_1", "mode1_2", "mode1_3", "mode1_4", "mode2_1", "mode2_2", "mode2_3", "mode2_4", "check_program", "mode_sewing_data", "mode_sewing_data1", "mode_sewing_data2", "presser_type_selection", "pattern_no_selecttion", "obj0", "obj1", "obj2", "obj3", "obj4", "btn_ready_screen", "btn_info_screen", "btn_sewing_data", "p1_btn_mode_screen", "btn_communication_screen", "presser_type", "btn_pattern_no_selecttion", "obj5", "obj6", "btn_mode2", "btn_check_program", "btn_change_sewing_mode", "btn_register_sewing_data_custom", "btn_sewing_data_in_mode", "btn_mode1", "btn_ready_screen1", "btn_info_screen1", "btn_communication_screen1", "btn_mode_screen1", "btn_performing_format", "btn_register_the_pattern", "mode1", "mode2", "mode3", "mode5", "mode7", "mode8", "mode4", "mode9", "obj7", "obj8", "obj9", "btn_ready_screen2", "btn_info_screen2", "btn_communication_screen2", "btn_mode_screen2", "obj10", "obj11", "btn_production_control", "btn_working_measurement", "btn_maintenance_and_inspection", "btn_ready_screen1_1", "btn_info_screen1_1", "btn_communication_screen1_1", "btn_mode_screen1_1", "i1", "i2", "i3", "obj12", "obj13", "btn_s004", "btn_s002", "btn_s005", "btn_s003", "btn_s006", "btn_s001", "btn_ready_screen3", "btn_info_screen3", "btn_communication_screen3", "btn_mode_screen3", "btn_next", "btn_back", "btn_exit", "s001", "s002", "s003", "s004", "s005", "s006", "obj14", "obj15", "btn_s010", "btn_s008", "btn_s011", "btn_s009", "btn_s021", "btn_s007", "btn_ready_screen4", "btn_info_screen4", "btn_communication_screen4", "btn_mode_screen4", "btn_next1", "btn_back1", "btn_exit1", "s007", "s008", "s009", "s0010", "s0011", "s021", "obj16", "obj17", "btn_ready_screen5", "btn_info_screen5", "btn_communication_screen5", "btn_mode_screen5", "btn_next2", "btn_back2", "btn_exit2", "s022", "s023", "s031", "s034", "s035", "s036", "obj18", "obj19", "btn_s044", "btn_s038", "btn_s051", "btn_s040", "btn_s055", "btn_s037", "btn_ready_screen6", "btn_info_screen6", "btn_communication_screen6", "btn_mode_screen6", "btn_next3", "btn_back3", "btn_exit3", "s037", "s038", "s040", "s044", "s051", "s055", "obj20", "obj21", "btn_s064", "btn_s058", "btn_s067", "btn_s062", "btn_s068", "btn_s057", "btn_ready_screen7", "btn_info_screen7", "btn_communication_screen7", "btn_mode_screen7", "btn_next4", "btn_back4", "btn_exit4", "s057", "s058", "s062", "s064", "s067", "s068", "obj22", "obj23", "btn_s084", "btn_s081", "btn_ready_screen8", "btn_info_screen8", "btn_communication_screen8", "btn_mode_screen8", "btn_next5", "btn_back5", "btn_exit5", "s081", "s084", "obj24", "obj25", "btn_u004", "btn_u002", "btn_u005", "btn_u003", "btn_u006", "btn_u001", "btn_ready_screen9", "btn_info_screen9", "btn_communication_screen9", "btn_mode_screen9", "btn_next6", "btn_back6", "btn_exit6", "u001", "u002", "u003", "u004", "u005", "u006", "obj26", "obj27", "btn_u010", "btn_u008", "btn_u011", "btn_u009", "btn_u012", "btn_u007", "btn_ready_screen10", "btn_info_screen10", "btn_communication_screen10", "btn_mode_screen10", "btn_next7", "btn_back7", "btn_exit7", "u007", "u008", "u009", "u010", "u011", "u012", "obj28", "obj29", "btn_u018", "btn_u014", "btn_u019", "btn_u015", "btn_u020", "btn_u013", "btn_ready_screen11", "btn_info_screen11", "btn_communication_screen11", "btn_mode_screen11", "btn_next8", "btn_back8", "btn_exit8", "u013", "u014", "u015", "u018", "u019", "u020", "obj30", "obj31", "btn_u024", "btn_u022", "btn_u025", "btn_u023", "btn_u500", "btn_u021", "btn_ready_screen12", "btn_info_screen12", "btn_communication_screen12", "btn_mode_screen12", "u021", "u022", "u023", "u024", "u025", "u500", "obj32", "obj33", "btn_k005", "btn_k003", "btn_k006", "btn_k004", "btn_k007", "btn_k001", "btn_ready_screen13", "btn_info_screen13", "btn_communication_screen13", "btn_mode_screen13", "btn_next9", "btn_back9", "btn_exit9", "k001", "k003", "k004", "k005", "k006", "k007", "obj34", "obj35", "btn_k011", "btn_k009", "btn_k012", "btn_k010", "btn_k013", "btn_k008", "btn_ready_screen14", "btn_info_screen14", "btn_communication_screen14", "btn_mode_screen14", "btn_next10", "btn_back10", "btn_exit10", "k008", "k009", "k010", "k011", "k012", "k013", "obj36", "obj37", "btn_k017", "btn_k015", "btn_k018", "btn_k016", "btn_k019", "btn_k014", "btn_ready_screen15", "btn_info_screen15", "btn_communication_screen15", "btn_mode_screen15", "btn_next11", "btn_back11", "btn_exit11", "k014", "k015", "k016", "k017", "k018", "k019", "obj38", "obj39", "btn_k021", "btn_k022", "btn_k020", "btn_ready_screen16", "btn_info_screen16", "btn_communication_screen16", "btn_mode_screen16", "btn_next12", "btn_back12", "btn_exit12", "k020", "k021", "k022", "obj40", "obj41", "btn_i004", "btn_i002", "btn_i005", "btn_i003", "btn_i001", "btn_ready_screen17", "btn_info_screen17", "btn_communication_screen17", "btn_mode_screen17", "btn_next13", "btn_back13", "btn_exit13", "i001", "i002", "i003", "i004", "i005", "obj42", "obj43", "btn_s042", "btn_s039", "btn_s052", "btn_s041", "btn_s053", "btn_s020", "btn_ready_screen18", "btn_info_screen18", "btn_communication_screen18", "btn_mode_screen18", "btn_next14", "btn_back14", "btn_exit14", "s020", "s039", "s041", "s042", "s052", "s053", "obj44", "obj45", "btn_s060", "btn_s056", "btn_s061", "btn_s059", "btn_s063", "btn_s054", "btn_ready_screen19", "btn_info_screen19", "btn_communication_screen19", "btn_mode_screen19", "btn_next15", "btn_back15", "btn_exit15", "s054", "s056", "s059", "s060", "s061", "s063", "obj46", "obj47", "btn_s070", "btn_s066", "btn_s083", "btn_s069", "btn_s065", "btn_ready_screen20", "btn_info_screen20", "btn_communication_screen20", "btn_mode_screen20", "btn_next16", "btn_back16", "btn_exit16", "s065", "s066", "s069", "s070", "s083", "obj48", "obj49", "btn_ready_screen20_1", "btn_info_screen20_1", "btn_communication_screen20_1", "btn_mode_screen20_1", "btn_exit16_1", "presser_type_1", "presser_type_2", "presser_type_5", "presser_type_3", "obj50", "obj51", "obj52", "btn_ready_screen20_3", "btn_info_screen20_3", "btn_communication_screen20_3", "btn_mode_screen20_3", "btn_exit16_3", "obj53", "obj54", "obj55", "obj56", "obj57", "obj58", "obj59", "pattern_no" };
 
 //
 // Event handlers
@@ -28,7 +28,7 @@ static void event_handler_cb_main_btn_ready_screen(lv_event_t *e) {
     
     if (event == LV_EVENT_PRESSED) {
         e->user_data = (void *)0;
-        flowPropagateValueLVGLEvent(flowState, 27, 0, e);
+        flowPropagateValueLVGLEvent(flowState, 25, 0, e);
     }
 }
 
@@ -39,7 +39,7 @@ static void event_handler_cb_main_btn_info_screen(lv_event_t *e) {
     
     if (event == LV_EVENT_PRESSED) {
         e->user_data = (void *)0;
-        flowPropagateValueLVGLEvent(flowState, 28, 0, e);
+        flowPropagateValueLVGLEvent(flowState, 26, 0, e);
     }
 }
 
@@ -50,7 +50,7 @@ static void event_handler_cb_main_btn_sewing_data(lv_event_t *e) {
     
     if (event == LV_EVENT_PRESSED) {
         e->user_data = (void *)0;
-        flowPropagateValueLVGLEvent(flowState, 29, 0, e);
+        flowPropagateValueLVGLEvent(flowState, 27, 0, e);
     }
 }
 
@@ -61,7 +61,29 @@ static void event_handler_cb_main_p1_btn_mode_screen(lv_event_t *e) {
     
     if (event == LV_EVENT_PRESSED) {
         e->user_data = (void *)0;
+        flowPropagateValueLVGLEvent(flowState, 28, 0, e);
+    }
+}
+
+static void event_handler_cb_main_presser_type(lv_event_t *e) {
+    lv_event_code_t event = lv_event_get_code(e);
+    void *flowState = lv_event_get_user_data(e);
+    (void)flowState;
+    
+    if (event == LV_EVENT_PRESSED) {
+        e->user_data = (void *)0;
         flowPropagateValueLVGLEvent(flowState, 30, 0, e);
+    }
+}
+
+static void event_handler_cb_main_btn_pattern_no_selecttion(lv_event_t *e) {
+    lv_event_code_t event = lv_event_get_code(e);
+    void *flowState = lv_event_get_user_data(e);
+    (void)flowState;
+    
+    if (event == LV_EVENT_PRESSED) {
+        e->user_data = (void *)0;
+        flowPropagateValueLVGLEvent(flowState, 31, 0, e);
     }
 }
 
@@ -109,6 +131,28 @@ static void event_handler_cb_mode_btn_mode1(lv_event_t *e) {
     }
 }
 
+static void event_handler_cb_mode_btn_ready_screen1(lv_event_t *e) {
+    lv_event_code_t event = lv_event_get_code(e);
+    void *flowState = lv_event_get_user_data(e);
+    (void)flowState;
+    
+    if (event == LV_EVENT_PRESSED) {
+        e->user_data = (void *)0;
+        flowPropagateValueLVGLEvent(flowState, 9, 0, e);
+    }
+}
+
+static void event_handler_cb_mode_btn_info_screen1(lv_event_t *e) {
+    lv_event_code_t event = lv_event_get_code(e);
+    void *flowState = lv_event_get_user_data(e);
+    (void)flowState;
+    
+    if (event == LV_EVENT_PRESSED) {
+        e->user_data = (void *)0;
+        flowPropagateValueLVGLEvent(flowState, 10, 0, e);
+    }
+}
+
 static void event_handler_cb_mode_btn_mode_screen1(lv_event_t *e) {
     lv_event_code_t event = lv_event_get_code(e);
     void *flowState = lv_event_get_user_data(e);
@@ -139,6 +183,17 @@ static void event_handler_cb_ready_btn_mode_screen2(lv_event_t *e) {
     if (event == LV_EVENT_PRESSED) {
         e->user_data = (void *)0;
         flowPropagateValueLVGLEvent(flowState, 10, 0, e);
+    }
+}
+
+static void event_handler_cb_info_btn_mode_screen1_1(lv_event_t *e) {
+    lv_event_code_t event = lv_event_get_code(e);
+    void *flowState = lv_event_get_user_data(e);
+    (void)flowState;
+    
+    if (event == LV_EVENT_PRESSED) {
+        e->user_data = (void *)0;
+        flowPropagateValueLVGLEvent(flowState, 9, 0, e);
     }
 }
 
@@ -241,6 +296,182 @@ static void event_handler_cb_mode_sewing_data_btn_exit14(lv_event_t *e) {
     }
 }
 
+static void event_handler_cb_presser_type_selection_btn_mode_screen20_1(lv_event_t *e) {
+    lv_event_code_t event = lv_event_get_code(e);
+    void *flowState = lv_event_get_user_data(e);
+    (void)flowState;
+    
+    if (event == LV_EVENT_PRESSED) {
+        e->user_data = (void *)0;
+        flowPropagateValueLVGLEvent(flowState, 6, 0, e);
+    }
+}
+
+static void event_handler_cb_presser_type_selection_btn_exit16_1(lv_event_t *e) {
+    lv_event_code_t event = lv_event_get_code(e);
+    void *flowState = lv_event_get_user_data(e);
+    (void)flowState;
+    
+    if (event == LV_EVENT_PRESSED) {
+        e->user_data = (void *)0;
+        flowPropagateValueLVGLEvent(flowState, 7, 0, e);
+    }
+}
+
+static void event_handler_cb_presser_type_selection_presser_type_1(lv_event_t *e) {
+    lv_event_code_t event = lv_event_get_code(e);
+    void *flowState = lv_event_get_user_data(e);
+    (void)flowState;
+    
+    if (event == LV_EVENT_PRESSED) {
+        e->user_data = (void *)0;
+        flowPropagateValueLVGLEvent(flowState, 8, 0, e);
+    }
+}
+
+static void event_handler_cb_presser_type_selection_presser_type_2(lv_event_t *e) {
+    lv_event_code_t event = lv_event_get_code(e);
+    void *flowState = lv_event_get_user_data(e);
+    (void)flowState;
+    
+    if (event == LV_EVENT_PRESSED) {
+        e->user_data = (void *)0;
+        flowPropagateValueLVGLEvent(flowState, 9, 0, e);
+    }
+}
+
+static void event_handler_cb_presser_type_selection_presser_type_5(lv_event_t *e) {
+    lv_event_code_t event = lv_event_get_code(e);
+    void *flowState = lv_event_get_user_data(e);
+    (void)flowState;
+    
+    if (event == LV_EVENT_PRESSED) {
+        e->user_data = (void *)0;
+        flowPropagateValueLVGLEvent(flowState, 10, 0, e);
+    }
+}
+
+static void event_handler_cb_presser_type_selection_presser_type_3(lv_event_t *e) {
+    lv_event_code_t event = lv_event_get_code(e);
+    void *flowState = lv_event_get_user_data(e);
+    (void)flowState;
+    
+    if (event == LV_EVENT_PRESSED) {
+        e->user_data = (void *)0;
+        flowPropagateValueLVGLEvent(flowState, 11, 0, e);
+    }
+}
+
+static void event_handler_cb_presser_type_selection_obj50(lv_event_t *e) {
+    lv_event_code_t event = lv_event_get_code(e);
+    void *flowState = lv_event_get_user_data(e);
+    (void)flowState;
+    
+    if (event == LV_EVENT_PRESSED) {
+        e->user_data = (void *)0;
+        flowPropagateValueLVGLEvent(flowState, 12, 0, e);
+    }
+}
+
+static void event_handler_cb_pattern_no_selecttion_btn_mode_screen20_3(lv_event_t *e) {
+    lv_event_code_t event = lv_event_get_code(e);
+    void *flowState = lv_event_get_user_data(e);
+    (void)flowState;
+    
+    if (event == LV_EVENT_PRESSED) {
+        e->user_data = (void *)0;
+        flowPropagateValueLVGLEvent(flowState, 6, 0, e);
+    }
+}
+
+static void event_handler_cb_pattern_no_selecttion_btn_exit16_3(lv_event_t *e) {
+    lv_event_code_t event = lv_event_get_code(e);
+    void *flowState = lv_event_get_user_data(e);
+    (void)flowState;
+    
+    if (event == LV_EVENT_PRESSED) {
+        e->user_data = (void *)0;
+        flowPropagateValueLVGLEvent(flowState, 7, 0, e);
+    }
+}
+
+static void event_handler_cb_pattern_no_selecttion_obj53(lv_event_t *e) {
+    lv_event_code_t event = lv_event_get_code(e);
+    void *flowState = lv_event_get_user_data(e);
+    (void)flowState;
+    
+    if (event == LV_EVENT_PRESSED) {
+        e->user_data = (void *)0;
+        flowPropagateValueLVGLEvent(flowState, 8, 0, e);
+    }
+}
+
+static void event_handler_cb_pattern_no_selecttion_obj54(lv_event_t *e) {
+    lv_event_code_t event = lv_event_get_code(e);
+    void *flowState = lv_event_get_user_data(e);
+    (void)flowState;
+    
+    if (event == LV_EVENT_PRESSED) {
+        e->user_data = (void *)0;
+        flowPropagateValueLVGLEvent(flowState, 11, 0, e);
+    }
+}
+
+static void event_handler_cb_pattern_no_selecttion_obj55(lv_event_t *e) {
+    lv_event_code_t event = lv_event_get_code(e);
+    void *flowState = lv_event_get_user_data(e);
+    (void)flowState;
+    
+    if (event == LV_EVENT_PRESSED) {
+        e->user_data = (void *)0;
+        flowPropagateValueLVGLEvent(flowState, 12, 0, e);
+    }
+}
+
+static void event_handler_cb_pattern_no_selecttion_obj56(lv_event_t *e) {
+    lv_event_code_t event = lv_event_get_code(e);
+    void *flowState = lv_event_get_user_data(e);
+    (void)flowState;
+    
+    if (event == LV_EVENT_PRESSED) {
+        e->user_data = (void *)0;
+        flowPropagateValueLVGLEvent(flowState, 13, 0, e);
+    }
+}
+
+static void event_handler_cb_pattern_no_selecttion_obj57(lv_event_t *e) {
+    lv_event_code_t event = lv_event_get_code(e);
+    void *flowState = lv_event_get_user_data(e);
+    (void)flowState;
+    
+    if (event == LV_EVENT_PRESSED) {
+        e->user_data = (void *)0;
+        flowPropagateValueLVGLEvent(flowState, 14, 0, e);
+    }
+}
+
+static void event_handler_cb_pattern_no_selecttion_obj58(lv_event_t *e) {
+    lv_event_code_t event = lv_event_get_code(e);
+    void *flowState = lv_event_get_user_data(e);
+    (void)flowState;
+    
+    if (event == LV_EVENT_PRESSED) {
+        e->user_data = (void *)0;
+        flowPropagateValueLVGLEvent(flowState, 15, 0, e);
+    }
+}
+
+static void event_handler_cb_pattern_no_selecttion_obj59(lv_event_t *e) {
+    lv_event_code_t event = lv_event_get_code(e);
+    void *flowState = lv_event_get_user_data(e);
+    (void)flowState;
+    
+    if (event == LV_EVENT_PRESSED) {
+        e->user_data = (void *)0;
+        flowPropagateValueLVGLEvent(flowState, 16, 0, e);
+    }
+}
+
 //
 // Screens
 //
@@ -313,12 +544,6 @@ void create_screen_main() {
         }
         {
             lv_obj_t *obj = lv_img_create(parent_obj);
-            lv_obj_set_pos(obj, 82, 382);
-            lv_obj_set_size(obj, LV_SIZE_CONTENT, LV_SIZE_CONTENT);
-            lv_img_set_src(obj, &img_ma_g);
-        }
-        {
-            lv_obj_t *obj = lv_img_create(parent_obj);
             lv_obj_set_pos(obj, 72, 15);
             lv_obj_set_size(obj, LV_SIZE_CONTENT, LV_SIZE_CONTENT);
             lv_img_set_src(obj, &img_ma_m);
@@ -370,12 +595,6 @@ void create_screen_main() {
             lv_obj_set_pos(obj, 469, 192);
             lv_obj_set_size(obj, LV_SIZE_CONTENT, LV_SIZE_CONTENT);
             lv_img_set_src(obj, &img_ma_k);
-        }
-        {
-            lv_obj_t *obj = lv_img_create(parent_obj);
-            lv_obj_set_pos(obj, 469, 60);
-            lv_obj_set_size(obj, LV_SIZE_CONTENT, LV_SIZE_CONTENT);
-            lv_img_set_src(obj, &img_ma_r);
         }
         {
             lv_obj_t *obj = lv_img_create(parent_obj);
@@ -479,6 +698,24 @@ void create_screen_main() {
             lv_obj_set_style_text_opa(obj, 0, LV_PART_MAIN | LV_STATE_DEFAULT);
             lv_obj_set_style_bg_img_src(obj, &img_defaul3, LV_PART_MAIN | LV_STATE_DEFAULT);
         }
+        {
+            // presser_type
+            lv_obj_t *obj = lv_btn_create(parent_obj);
+            objects.presser_type = obj;
+            lv_obj_set_pos(obj, 469, 54);
+            lv_obj_set_size(obj, 60, 120);
+            lv_obj_add_event_cb(obj, event_handler_cb_main_presser_type, LV_EVENT_ALL, flowState);
+            lv_obj_set_style_bg_img_src(obj, &img_ma_r, LV_PART_MAIN | LV_STATE_DEFAULT);
+        }
+        {
+            // btn_pattern_no_selecttion
+            lv_obj_t *obj = lv_btn_create(parent_obj);
+            objects.btn_pattern_no_selecttion = obj;
+            lv_obj_set_pos(obj, 82, 382);
+            lv_obj_set_size(obj, 80, 90);
+            lv_obj_add_event_cb(obj, event_handler_cb_main_btn_pattern_no_selecttion, LV_EVENT_ALL, flowState);
+            lv_obj_set_style_bg_img_src(obj, &img_ma_g, LV_PART_MAIN | LV_STATE_DEFAULT);
+        }
     }
     
     tick_screen_main();
@@ -570,6 +807,7 @@ void create_screen_mode() {
             objects.btn_ready_screen1 = obj;
             lv_obj_set_pos(obj, 690, 361);
             lv_obj_set_size(obj, 100, 100);
+            lv_obj_add_event_cb(obj, event_handler_cb_mode_btn_ready_screen1, LV_EVENT_ALL, flowState);
             lv_obj_set_style_bg_img_src(obj, &img_defaul1, LV_PART_MAIN | LV_STATE_DEFAULT);
         }
         {
@@ -578,6 +816,7 @@ void create_screen_mode() {
             objects.btn_info_screen1 = obj;
             lv_obj_set_pos(obj, 690, 241);
             lv_obj_set_size(obj, 100, 100);
+            lv_obj_add_event_cb(obj, event_handler_cb_mode_btn_info_screen1, LV_EVENT_ALL, flowState);
             lv_obj_set_style_bg_img_src(obj, &img_defaul2, LV_PART_MAIN | LV_STATE_DEFAULT);
         }
         {
@@ -939,6 +1178,7 @@ void create_screen_info() {
             objects.btn_mode_screen1_1 = obj;
             lv_obj_set_pos(obj, 690, 18);
             lv_obj_set_size(obj, 100, 100);
+            lv_obj_add_event_cb(obj, event_handler_cb_info_btn_mode_screen1_1, LV_EVENT_ALL, flowState);
             lv_obj_set_style_bg_img_src(obj, &img_defaul4, LV_PART_MAIN | LV_STATE_DEFAULT);
         }
         {
@@ -4068,6 +4308,278 @@ void tick_screen_mode_sewing_data2() {
     (void)flowState;
 }
 
+void create_screen_presser_type_selection() {
+    void *flowState = getFlowState(0, 22);
+    (void)flowState;
+    lv_obj_t *obj = lv_obj_create(0);
+    objects.presser_type_selection = obj;
+    lv_obj_set_pos(obj, 0, 0);
+    lv_obj_set_size(obj, 800, 480);
+    {
+        lv_obj_t *parent_obj = obj;
+        {
+            lv_obj_t *obj = lv_obj_create(parent_obj);
+            objects.obj48 = obj;
+            lv_obj_set_pos(obj, 0, 0);
+            lv_obj_set_size(obj, 680, 480);
+            lv_obj_set_style_bg_color(obj, lv_color_hex(0xffababf2), LV_PART_MAIN | LV_STATE_DEFAULT);
+        }
+        {
+            lv_obj_t *obj = lv_obj_create(parent_obj);
+            objects.obj49 = obj;
+            lv_obj_set_pos(obj, 680, 0);
+            lv_obj_set_size(obj, 120, 480);
+            lv_obj_set_style_bg_color(obj, lv_color_hex(0xff002966), LV_PART_MAIN | LV_STATE_DEFAULT);
+        }
+        {
+            // btn_ready_screen20_1
+            lv_obj_t *obj = lv_btn_create(parent_obj);
+            objects.btn_ready_screen20_1 = obj;
+            lv_obj_set_pos(obj, 690, 361);
+            lv_obj_set_size(obj, 100, 100);
+            lv_obj_set_style_bg_img_src(obj, &img_defaul1, LV_PART_MAIN | LV_STATE_DEFAULT);
+        }
+        {
+            // btn_info_screen20_1
+            lv_obj_t *obj = lv_btn_create(parent_obj);
+            objects.btn_info_screen20_1 = obj;
+            lv_obj_set_pos(obj, 690, 241);
+            lv_obj_set_size(obj, 100, 100);
+            lv_obj_set_style_bg_img_src(obj, &img_defaul2, LV_PART_MAIN | LV_STATE_DEFAULT);
+        }
+        {
+            // btn_communication_screen20_1
+            lv_obj_t *obj = lv_btn_create(parent_obj);
+            objects.btn_communication_screen20_1 = obj;
+            lv_obj_set_pos(obj, 690, 128);
+            lv_obj_set_size(obj, 100, 100);
+            lv_obj_set_style_bg_img_src(obj, &img_defaul3, LV_PART_MAIN | LV_STATE_DEFAULT);
+        }
+        {
+            // btn_mode_screen20_1
+            lv_obj_t *obj = lv_btn_create(parent_obj);
+            objects.btn_mode_screen20_1 = obj;
+            lv_obj_set_pos(obj, 690, 18);
+            lv_obj_set_size(obj, 100, 100);
+            lv_obj_add_event_cb(obj, event_handler_cb_presser_type_selection_btn_mode_screen20_1, LV_EVENT_ALL, flowState);
+            lv_obj_set_style_bg_img_src(obj, &img_defaul4, LV_PART_MAIN | LV_STATE_DEFAULT);
+        }
+        {
+            // btn_exit16_1
+            lv_obj_t *obj = lv_btn_create(parent_obj);
+            objects.btn_exit16_1 = obj;
+            lv_obj_set_pos(obj, 18, 18);
+            lv_obj_set_size(obj, 60, 60);
+            lv_obj_add_event_cb(obj, event_handler_cb_presser_type_selection_btn_exit16_1, LV_EVENT_ALL, flowState);
+            lv_obj_set_style_bg_img_src(obj, &img_exit, LV_PART_MAIN | LV_STATE_DEFAULT);
+            lv_obj_set_style_bg_img_opa(obj, 255, LV_PART_MAIN | LV_STATE_DEFAULT);
+        }
+        {
+            // presser_type_1
+            lv_obj_t *obj = lv_btn_create(parent_obj);
+            objects.presser_type_1 = obj;
+            lv_obj_set_pos(obj, 60, 291);
+            lv_obj_set_size(obj, 100, 150);
+            lv_obj_add_event_cb(obj, event_handler_cb_presser_type_selection_presser_type_1, LV_EVENT_ALL, flowState);
+            lv_obj_set_style_bg_img_src(obj, &img_type1, LV_PART_MAIN | LV_STATE_DEFAULT);
+        }
+        {
+            // presser_type_2
+            lv_obj_t *obj = lv_btn_create(parent_obj);
+            objects.presser_type_2 = obj;
+            lv_obj_set_pos(obj, 208, 291);
+            lv_obj_set_size(obj, 100, 150);
+            lv_obj_add_event_cb(obj, event_handler_cb_presser_type_selection_presser_type_2, LV_EVENT_ALL, flowState);
+            lv_obj_set_style_bg_img_src(obj, &img_type2, LV_PART_MAIN | LV_STATE_DEFAULT);
+        }
+        {
+            // presser_type_5
+            lv_obj_t *obj = lv_btn_create(parent_obj);
+            objects.presser_type_5 = obj;
+            lv_obj_set_pos(obj, 495, 291);
+            lv_obj_set_size(obj, 100, 150);
+            lv_obj_add_event_cb(obj, event_handler_cb_presser_type_selection_presser_type_5, LV_EVENT_ALL, flowState);
+            lv_obj_set_style_bg_img_src(obj, &img_type5, LV_PART_MAIN | LV_STATE_DEFAULT);
+        }
+        {
+            // presser_type_3
+            lv_obj_t *obj = lv_btn_create(parent_obj);
+            objects.presser_type_3 = obj;
+            lv_obj_set_pos(obj, 350, 291);
+            lv_obj_set_size(obj, 100, 150);
+            lv_obj_add_event_cb(obj, event_handler_cb_presser_type_selection_presser_type_3, LV_EVENT_ALL, flowState);
+            lv_obj_set_style_bg_img_src(obj, &img_type3, LV_PART_MAIN | LV_STATE_DEFAULT);
+        }
+        {
+            lv_obj_t *obj = lv_btn_create(parent_obj);
+            objects.obj50 = obj;
+            lv_obj_set_pos(obj, 595, 18);
+            lv_obj_set_size(obj, 65, 90);
+            lv_obj_add_event_cb(obj, event_handler_cb_presser_type_selection_obj50, LV_EVENT_ALL, flowState);
+            lv_obj_set_style_bg_img_src(obj, &img_enter, LV_PART_MAIN | LV_STATE_DEFAULT);
+        }
+    }
+    
+    tick_screen_presser_type_selection();
+}
+
+void tick_screen_presser_type_selection() {
+    void *flowState = getFlowState(0, 22);
+    (void)flowState;
+}
+
+void create_screen_pattern_no_selecttion() {
+    void *flowState = getFlowState(0, 23);
+    (void)flowState;
+    lv_obj_t *obj = lv_obj_create(0);
+    objects.pattern_no_selecttion = obj;
+    lv_obj_set_pos(obj, 0, 0);
+    lv_obj_set_size(obj, 800, 480);
+    {
+        lv_obj_t *parent_obj = obj;
+        {
+            lv_obj_t *obj = lv_obj_create(parent_obj);
+            objects.obj51 = obj;
+            lv_obj_set_pos(obj, 0, 0);
+            lv_obj_set_size(obj, 680, 480);
+            lv_obj_set_style_bg_color(obj, lv_color_hex(0xffababf2), LV_PART_MAIN | LV_STATE_DEFAULT);
+        }
+        {
+            lv_obj_t *obj = lv_obj_create(parent_obj);
+            objects.obj52 = obj;
+            lv_obj_set_pos(obj, 680, 0);
+            lv_obj_set_size(obj, 120, 480);
+            lv_obj_set_style_bg_color(obj, lv_color_hex(0xff002966), LV_PART_MAIN | LV_STATE_DEFAULT);
+        }
+        {
+            // btn_ready_screen20_3
+            lv_obj_t *obj = lv_btn_create(parent_obj);
+            objects.btn_ready_screen20_3 = obj;
+            lv_obj_set_pos(obj, 690, 361);
+            lv_obj_set_size(obj, 100, 100);
+            lv_obj_set_style_bg_img_src(obj, &img_defaul1, LV_PART_MAIN | LV_STATE_DEFAULT);
+        }
+        {
+            // btn_info_screen20_3
+            lv_obj_t *obj = lv_btn_create(parent_obj);
+            objects.btn_info_screen20_3 = obj;
+            lv_obj_set_pos(obj, 690, 241);
+            lv_obj_set_size(obj, 100, 100);
+            lv_obj_set_style_bg_img_src(obj, &img_defaul2, LV_PART_MAIN | LV_STATE_DEFAULT);
+        }
+        {
+            // btn_communication_screen20_3
+            lv_obj_t *obj = lv_btn_create(parent_obj);
+            objects.btn_communication_screen20_3 = obj;
+            lv_obj_set_pos(obj, 690, 128);
+            lv_obj_set_size(obj, 100, 100);
+            lv_obj_set_style_bg_img_src(obj, &img_defaul3, LV_PART_MAIN | LV_STATE_DEFAULT);
+        }
+        {
+            // btn_mode_screen20_3
+            lv_obj_t *obj = lv_btn_create(parent_obj);
+            objects.btn_mode_screen20_3 = obj;
+            lv_obj_set_pos(obj, 690, 18);
+            lv_obj_set_size(obj, 100, 100);
+            lv_obj_add_event_cb(obj, event_handler_cb_pattern_no_selecttion_btn_mode_screen20_3, LV_EVENT_ALL, flowState);
+            lv_obj_set_style_bg_img_src(obj, &img_defaul4, LV_PART_MAIN | LV_STATE_DEFAULT);
+        }
+        {
+            // btn_exit16_3
+            lv_obj_t *obj = lv_btn_create(parent_obj);
+            objects.btn_exit16_3 = obj;
+            lv_obj_set_pos(obj, 18, 18);
+            lv_obj_set_size(obj, 60, 60);
+            lv_obj_add_event_cb(obj, event_handler_cb_pattern_no_selecttion_btn_exit16_3, LV_EVENT_ALL, flowState);
+            lv_obj_set_style_bg_img_src(obj, &img_exit, LV_PART_MAIN | LV_STATE_DEFAULT);
+            lv_obj_set_style_bg_img_opa(obj, 255, LV_PART_MAIN | LV_STATE_DEFAULT);
+        }
+        {
+            lv_obj_t *obj = lv_btn_create(parent_obj);
+            objects.obj53 = obj;
+            lv_obj_set_pos(obj, 345, 321);
+            lv_obj_set_size(obj, 125, 140);
+            lv_obj_add_event_cb(obj, event_handler_cb_pattern_no_selecttion_obj53, LV_EVENT_ALL, flowState);
+            lv_obj_set_style_bg_img_src(obj, &img_pattern_no_1, LV_PART_MAIN | LV_STATE_DEFAULT);
+        }
+        {
+            lv_obj_t *obj = lv_btn_create(parent_obj);
+            lv_obj_set_pos(obj, 615, 401);
+            lv_obj_set_size(obj, 60, 60);
+            lv_obj_set_style_bg_img_src(obj, &img_back, LV_PART_MAIN | LV_STATE_DEFAULT);
+        }
+        {
+            lv_obj_t *obj = lv_btn_create(parent_obj);
+            lv_obj_set_pos(obj, 615, 18);
+            lv_obj_set_size(obj, 60, 60);
+            lv_obj_set_style_bg_img_src(obj, &img_next, LV_PART_MAIN | LV_STATE_DEFAULT);
+        }
+        {
+            lv_obj_t *obj = lv_btn_create(parent_obj);
+            objects.obj54 = obj;
+            lv_obj_set_pos(obj, 257, 18);
+            lv_obj_set_size(obj, 70, 90);
+            lv_obj_add_event_cb(obj, event_handler_cb_pattern_no_selecttion_obj54, LV_EVENT_ALL, flowState);
+            lv_obj_set_style_bg_img_src(obj, &img_enter, LV_PART_MAIN | LV_STATE_DEFAULT);
+        }
+        {
+            lv_obj_t *obj = lv_btn_create(parent_obj);
+            objects.obj55 = obj;
+            lv_obj_set_pos(obj, 345, 169);
+            lv_obj_set_size(obj, 125, 140);
+            lv_obj_add_event_cb(obj, event_handler_cb_pattern_no_selecttion_obj55, LV_EVENT_ALL, flowState);
+            lv_obj_set_style_bg_img_src(obj, &img_pattern_no_2, LV_PART_MAIN | LV_STATE_DEFAULT);
+        }
+        {
+            lv_obj_t *obj = lv_btn_create(parent_obj);
+            objects.obj56 = obj;
+            lv_obj_set_pos(obj, 345, 18);
+            lv_obj_set_size(obj, 125, 140);
+            lv_obj_add_event_cb(obj, event_handler_cb_pattern_no_selecttion_obj56, LV_EVENT_ALL, flowState);
+            lv_obj_set_style_bg_img_src(obj, &img_pattern_no_3, LV_PART_MAIN | LV_STATE_DEFAULT);
+        }
+        {
+            lv_obj_t *obj = lv_btn_create(parent_obj);
+            objects.obj57 = obj;
+            lv_obj_set_pos(obj, 479, 321);
+            lv_obj_set_size(obj, 125, 140);
+            lv_obj_add_event_cb(obj, event_handler_cb_pattern_no_selecttion_obj57, LV_EVENT_ALL, flowState);
+            lv_obj_set_style_bg_img_src(obj, &img_pattern_no_4, LV_PART_MAIN | LV_STATE_DEFAULT);
+        }
+        {
+            lv_obj_t *obj = lv_btn_create(parent_obj);
+            objects.obj58 = obj;
+            lv_obj_set_pos(obj, 479, 169);
+            lv_obj_set_size(obj, 125, 140);
+            lv_obj_add_event_cb(obj, event_handler_cb_pattern_no_selecttion_obj58, LV_EVENT_ALL, flowState);
+            lv_obj_set_style_bg_img_src(obj, &img_pattern_no_5, LV_PART_MAIN | LV_STATE_DEFAULT);
+        }
+        {
+            lv_obj_t *obj = lv_btn_create(parent_obj);
+            objects.obj59 = obj;
+            lv_obj_set_pos(obj, 479, 18);
+            lv_obj_set_size(obj, 125, 140);
+            lv_obj_add_event_cb(obj, event_handler_cb_pattern_no_selecttion_obj59, LV_EVENT_ALL, flowState);
+            lv_obj_set_style_bg_img_src(obj, &img_pattern_no_6, LV_PART_MAIN | LV_STATE_DEFAULT);
+        }
+        {
+            // pattern_no
+            lv_obj_t *obj = lv_img_create(parent_obj);
+            objects.pattern_no = obj;
+            lv_obj_set_pos(obj, 7, 111);
+            lv_obj_set_size(obj, LV_SIZE_CONTENT, LV_SIZE_CONTENT);
+            lv_img_set_src(obj, &img_pattern_no_1_1);
+        }
+    }
+    
+    tick_screen_pattern_no_selecttion();
+}
+
+void tick_screen_pattern_no_selecttion() {
+    void *flowState = getFlowState(0, 23);
+    (void)flowState;
+}
+
 typedef void (*tick_screen_func_t)();
 tick_screen_func_t tick_screen_funcs[] = {
     tick_screen_main,
@@ -4092,6 +4604,8 @@ tick_screen_func_t tick_screen_funcs[] = {
     tick_screen_mode_sewing_data,
     tick_screen_mode_sewing_data1,
     tick_screen_mode_sewing_data2,
+    tick_screen_presser_type_selection,
+    tick_screen_pattern_no_selecttion,
 };
 void tick_screen(int screen_index) {
     tick_screen_funcs[screen_index]();
@@ -4223,4 +4737,6 @@ eez_flow_init_fonts(fonts, sizeof(fonts) / sizeof(ext_font_desc_t));
     create_screen_mode_sewing_data();
     create_screen_mode_sewing_data1();
     create_screen_mode_sewing_data2();
+    create_screen_presser_type_selection();
+    create_screen_pattern_no_selecttion();
 }

@@ -158,6 +158,27 @@ extern const lv_img_dsc_t img_s083;
 extern const lv_img_dsc_t img_maintenance_and_inspection;
 extern const lv_img_dsc_t img_production_control;
 extern const lv_img_dsc_t img_working_measurement;
+extern const lv_img_dsc_t img_type1;
+extern const lv_img_dsc_t img_type2;
+extern const lv_img_dsc_t img_type3;
+extern const lv_img_dsc_t img_type5;
+extern const lv_img_dsc_t img_enter;
+extern const lv_img_dsc_t img_pattern_no_1;
+extern const lv_img_dsc_t img_pattern_no_2;
+extern const lv_img_dsc_t img_pattern_no_3;
+extern const lv_img_dsc_t img_pattern_no_4;
+extern const lv_img_dsc_t img_pattern_no_5;
+extern const lv_img_dsc_t img_pattern_no_6;
+extern const lv_img_dsc_t img_pattern_no_1_1;
+extern const lv_img_dsc_t img_pattern_no_2_2;
+extern const lv_img_dsc_t img_pattern_no_3_3;
+extern const lv_img_dsc_t img_pattern_no_4_4;
+extern const lv_img_dsc_t img_pattern_no_5_5;
+extern const lv_img_dsc_t img_pattern_no_6_6;
+extern const lv_img_dsc_t img_type2_2;
+extern const lv_img_dsc_t img_type1_1;
+extern const lv_img_dsc_t img_type3_3;
+extern const lv_img_dsc_t img_type5_5;
 
 #ifndef EXT_IMG_DESC_T
 #define EXT_IMG_DESC_T
@@ -167,7 +188,7 @@ typedef struct _ext_img_desc_t {
 } ext_img_desc_t;
 #endif
 
-extern const ext_img_desc_t images[151];
+extern const ext_img_desc_t images[172];
 
 #ifdef __cplusplus
 }
