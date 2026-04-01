@@ -134,10 +134,7 @@ extern const lv_img_dsc_t img_mode1;
 extern const lv_img_dsc_t img_mode2;
 extern const lv_img_dsc_t img_sewing_data;
 extern const lv_img_dsc_t img_check_program;
-extern const lv_img_dsc_t img_register_sewing_data_custom;
 extern const lv_img_dsc_t img_register_the_pattern;
-extern const lv_img_dsc_t img_change_sewing_mode;
-extern const lv_img_dsc_t img_performing_format;
 extern const lv_img_dsc_t img_s020;
 extern const lv_img_dsc_t img_s039;
 extern const lv_img_dsc_t img_s041;
@@ -175,10 +172,51 @@ extern const lv_img_dsc_t img_pattern_no_3_3;
 extern const lv_img_dsc_t img_pattern_no_4_4;
 extern const lv_img_dsc_t img_pattern_no_5_5;
 extern const lv_img_dsc_t img_pattern_no_6_6;
-extern const lv_img_dsc_t img_type2_2;
+extern const lv_img_dsc_t img_ma_a_not_background;
+extern const lv_img_dsc_t img_ma_b_not_background;
+extern const lv_img_dsc_t img_ma_c_not_background;
+extern const lv_img_dsc_t img_ma_e_not_background;
+extern const lv_img_dsc_t img_ma_f_not_background;
+extern const lv_img_dsc_t img_direct_1;
+extern const lv_img_dsc_t img_direct_2;
+extern const lv_img_dsc_t img_direct_4;
+extern const lv_img_dsc_t img_direct_5;
+extern const lv_img_dsc_t img_direct_6;
+extern const lv_img_dsc_t img_direct_7;
+extern const lv_img_dsc_t img_direct_8;
+extern const lv_img_dsc_t img_direct_9;
+extern const lv_img_dsc_t img_direct_3;
+extern const lv_img_dsc_t img_direct_10;
+extern const lv_img_dsc_t img_pattern_select2;
+extern const lv_img_dsc_t img_pattern_select3;
+extern const lv_img_dsc_t img_pattern_select4;
+extern const lv_img_dsc_t img_pattern_select5;
+extern const lv_img_dsc_t img_pattern_select6;
+extern const lv_img_dsc_t img_pattern_select7;
+extern const lv_img_dsc_t img_pattern_select8;
+extern const lv_img_dsc_t img_pattern_select9;
+extern const lv_img_dsc_t img_pattern_select10;
 extern const lv_img_dsc_t img_type1_1;
+extern const lv_img_dsc_t img_type2_2;
 extern const lv_img_dsc_t img_type3_3;
 extern const lv_img_dsc_t img_type5_5;
+extern const lv_img_dsc_t img_stop;
+extern const lv_img_dsc_t img_dong_ho_cat;
+extern const lv_img_dsc_t img_cuon_chi;
+extern const lv_img_dsc_t img_needle_replacement;
+extern const lv_img_dsc_t img_cleaning_time;
+extern const lv_img_dsc_t img_oil_replacement_time;
+extern const lv_img_dsc_t img_clear;
+extern const lv_img_dsc_t img_threading;
+extern const lv_img_dsc_t img_existing_target_value;
+extern const lv_img_dsc_t img_actual_results_value;
+extern const lv_img_dsc_t img_final_target_value;
+extern const lv_img_dsc_t img_pitch_time;
+extern const lv_img_dsc_t img_number_of_times_of_thread_trimming;
+extern const lv_img_dsc_t img_start;
+extern const lv_img_dsc_t img_working_ratio;
+extern const lv_img_dsc_t img_machine_speed;
+extern const lv_img_dsc_t img_machine_time;
 
 #ifndef EXT_IMG_DESC_T
 #define EXT_IMG_DESC_T
@@ -188,7 +226,7 @@ typedef struct _ext_img_desc_t {
 } ext_img_desc_t;
 #endif
 
-extern const ext_img_desc_t images[172];
+extern const ext_img_desc_t images[210];
 
 #ifdef __cplusplus
 }

@@ -1,6 +1,6 @@
 {
   "navigation": {
-    "selectedUserPageObject": "[UI.eez-project]:/userPages/24",
+    "selectedUserPageObject": "[UI.eez-project]:/userPages/28",
     "selectedStyleObject": "[UI.eez-project]:/lvglStyles/styles/0",
     "selectedFontObject": "[UI.eez-project]:/fonts/0",
     "selectedBitmapObject": "[UI.eez-project]:/bitmaps/154",
@@ -26,7 +26,6 @@
           },
           {
             "type": "border",
-            "selected": 2,
             "size": 213.5,
             "location": "right",
             "children": [
@@ -122,12 +121,12 @@
             {
               "type": "row",
               "id": "#a5d47dff-b64c-4279-b3aa-63ce00cc64ed",
-              "weight": 18.10590967117867,
+              "weight": 20.271404563095007,
               "children": [
                 {
                   "type": "tabset",
                   "id": "#fad75cfd-a924-4c43-981c-40c3cc788249",
-                  "weight": 1.5705766363680083,
+                  "weight": 0.4999759534458713,
                   "enableClose": false,
                   "children": [
                     {
@@ -159,7 +158,7 @@
                 {
                   "type": "tabset",
                   "id": "#a86f3e89-6d88-40ac-a040-3a7b46bd51cc",
-                  "weight": 1.0271245130572788,
+                  "weight": 2.0977251959794168,
                   "enableClose": false,
                   "children": [
                     {
@@ -193,7 +192,7 @@
             {
               "type": "tabset",
               "id": "EDITORS",
-              "weight": 54.77624523643937,
+              "weight": 54.33300312855247,
               "selected": 1,
               "enableDeleteWhenEmpty": false,
               "enableClose": false,
@@ -213,10 +212,10 @@
                 {
                   "type": "tab",
                   "id": "#3f75a5b3-51c8-4268-a37c-b96ea1576d32",
-                  "name": "pattern_no_selecttion",
+                  "name": "name_the_parttern",
                   "component": "editor",
                   "config": {
-                    "objectPath": "[UI.eez-project]:/userPages/24",
+                    "objectPath": "[UI.eez-project]:/userPages/28",
                     "permanent": false
                   },
                   "icon": "svg:page"
@@ -232,12 +231,13 @@
                   },
                   "icon": "svg:page"
                 }
-              ]
+              ],
+              "active": true
             },
             {
               "type": "tabset",
               "id": "#478c54f3-6fee-4834-a827-2edc5d579980",
-              "weight": 27.11784509238199,
+              "weight": 25.39559230835254,
               "children": [
                 {
                   "type": "tab",
@@ -263,8 +263,7 @@
                   "enableClose": false,
                   "icon": "svg:breakpoints_panel"
                 }
-              ],
-              "active": true
+              ]
             }
           ]
         }
@@ -1105,7 +1104,7 @@
           "x": -250,
           "y": -225
         },
-        "scale": 0.67
+        "scale": 1
       },
       "timeline": {
         "isEditorActive": false,
@@ -1278,10 +1277,7 @@
       "selectionFront": {},
       "selectionBack": {
         "0": {
-          "6": {},
-          "19": {
-            "$selected": true
-          }
+          "6": {}
         }
       },
       "transform": {
@@ -1289,7 +1285,7 @@
           "x": -300,
           "y": -140
         },
-        "scale": 0.75
+        "scale": 0.67
       },
       "timeline": {
         "isEditorActive": false,
@@ -1677,9 +1673,7 @@
       "selectionFront": {},
       "selectionBack": {
         "0": {
-          "7": {
-            "$selected": true
-          },
+          "7": {},
           "8": {},
           "9": {},
           "10": {},
@@ -1707,10 +1701,10 @@
           "7": {},
           "8": {},
           "9": {},
-          "10": {},
-          "11": {
+          "10": {
             "$selected": true
-          }
+          },
+          "11": {}
         },
         "1": {},
         "2": {}
@@ -1751,6 +1745,88 @@
         "secondToPx": 200,
         "scrollLeft": 0
       }
+    },
+    "[UI.eez-project]:/userPages/27[flow-state]": {
+      "selectionFront": {},
+      "selectionBack": {
+        "0": {
+          "20": {}
+        }
+      },
+      "transform": {
+        "translate": {
+          "x": -275.8719999999999,
+          "y": -178.75200000000007
+        },
+        "scale": 0.67
+      },
+      "timeline": {
+        "isEditorActive": false,
+        "position": 0,
+        "secondToPx": 200,
+        "scrollLeft": 0
+      }
+    },
+    "[UI.eez-project]:/userPages/25[flow-state]": {
+      "selectionFront": {},
+      "selectionBack": {},
+      "transform": {
+        "translate": {
+          "x": -400,
+          "y": -240
+        },
+        "scale": 0.67
+      },
+      "timeline": {
+        "isEditorActive": false,
+        "position": 0,
+        "secondToPx": 200,
+        "scrollLeft": 0
+      }
+    },
+    "[UI.eez-project]:/userPages/26[flow-state]": {
+      "selectionFront": {},
+      "selectionBack": {
+        "0": {
+          "17": {
+            "$selected": true
+          }
+        }
+      },
+      "transform": {
+        "translate": {
+          "x": -400,
+          "y": -240
+        },
+        "scale": 0.67
+      },
+      "timeline": {
+        "isEditorActive": false,
+        "position": 0,
+        "secondToPx": 200,
+        "scrollLeft": 0
+      }
+    },
+    "[UI.eez-project]:/userPages/28[flow-state]": {
+      "selectionFront": {},
+      "selectionBack": {
+        "0": {
+          "9": {}
+        }
+      },
+      "transform": {
+        "translate": {
+          "x": -475.2207146087744,
+          "y": -252.56879240162823
+        },
+        "scale": 1
+      },
+      "timeline": {
+        "isEditorActive": false,
+        "position": 0,
+        "secondToPx": 200,
+        "scrollLeft": 0
+      }
     }
   },
   "activeOutputSection": 0,
@@ -1776,7 +1852,7 @@
   ],
   "showInactiveFlowsInDebugger": true,
   "globalFlowZoom": true,
-  "flowZoom": 0.67,
+  "flowZoom": 1,
   "implementationLanguage": "C",
   "openDialogDefaultPath": "D:\\thuc_tap_TNM\\giao_dien_lbh1790_ip310\\icon_main\\R button\\xoay\\78ff98aa-cb30-4290-bdac-3054154c805a.png"
 }
